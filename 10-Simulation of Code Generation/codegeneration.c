@@ -36,3 +36,22 @@ printf("\n\tMov R%d%c", i, str[0]);
 } while (strcmp(icode[++i], "exit") != 0);
 return 1;
 }
+
+
+
+/*DESCRIPTION-: A compiler is a computer program that implements a programming language
+specification to “translate” programs, usually as a set of files which constitute the source code written
+in source language, into their equivalent machine readable instructions (the target language, often
+having a binary form known as object code). Code generation: The transformed language is translated
+into the output language, usually the native machine language of the system. This involves resource
+and storage decisions, such as deciding which variables to fit into registers and memory and the
+selection and scheduling of appropriate machine instructions along with their associated modes.
+Debug data may also need to be generated to facilitate debugging.
+ALGORITHM-:
+1. Start.
+2. Open the source file and store the contents as quadruples.
+3. Check for operators, in quadruples, if it is an arithmetic operator generator it or if assignment
+operator generates it, else perform unary minus on register C.
+4. Write the generated code into output definition of the file in outp.c
+5. Print the output.
+6. Stop*/
